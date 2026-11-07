@@ -1,0 +1,2 @@
+/api/*  https://gloria-gestion-final-backend.vercel.app/api/:splat  200
+/*      /index.html  200

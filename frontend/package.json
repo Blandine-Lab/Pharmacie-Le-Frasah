@@ -1,0 +1,33 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.12.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "@vitejs/plugin-react": "^6.1.0",
+    "axios": "^1.7.9",
+    "date-fns": "^4.4.0",
+    "dexie": "^4.4.5",
+    "html2canvas": "^1.4.1",
+    "html5-qrcode": "^2.3.8",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "qrcode.react": "^4.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-redux": "^9.3.0",
+    "react-router-dom": "^7.18.2",
+    "react-signature-canvas": "^1.0.7",
+    "recharts": "^3.10.1",
+    "vite": "^8.2.2"
+  },
+  "devDependencies": {
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}

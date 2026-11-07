@@ -1,0 +1,114 @@
+/* =============================================
+   PHARMACIE LE FRASAH — Styles globaux
+   ============================================= */
+
+/* Reset de base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background: #f0fdf4;
+  color: #1f2937;
+}
+
+body {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Le root prend TOUTE la largeur (indispensable pour le responsive) */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =============================================
+   AMÉLIORATIONS POUR MOBILE
+   ============================================= */
+
+/* Zones tactiles confortables (min 42px) */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Évite le zoom automatique iOS quand on tape dans un champ */
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+/* Tables scrollables sur mobile */
+@media (max-width: 768px) {
+  /* Grilles qui s'empilent sur mobile */
+  .grid-2-cols {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Modals adaptés au mobile */
+  .modal-content {
+    max-width: 95% !important;
+    margin: 0.5rem !important;
+    padding: 1rem !important;
+  }
+}
+
+/* =============================================
+   TYPOGRAPHIE DE BASE
+   ============================================= */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Images responsives par défaut */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Scrollbar fine et discrète (Chrome/Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* =============================================
+   IMPRESSION — Cache l'interface pendant l'impression
+   ============================================= */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}

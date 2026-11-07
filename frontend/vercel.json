@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://gloria-gestion-final-backend.vercel.app/api/$1"
+    }
+  ]
+}
